@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nav_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nav_bg"
+        android:gravity="center_horizontal"
+        android:isScrollContainer="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/navigation_height"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:padding="0.0px" >
+
+            <LinearLayout
+                android:id="@+id/hp_btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_register"
+                android:layout_alignParentLeft="true"
+                android:gravity="left|center_vertical"
+                android:orientation="vertical"
+                android:padding="@dimen/day_recommend_help_font_space" >
+
+                <ImageView
+                    android:id="@+id/hp_left_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:src="@drawable/hp_back_btn" />
+
+                
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/car_manage_title"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="车辆管理"
+                android:textColor="@color/font_dark"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:layout_alignParentBottom="true"
+                android:background="@color/login_divider" />
+        </RelativeLayout>
+
+        <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/car_manage_layout1"
+            android:clickable="true"
+            style="@style/single_layout">
+            <TextView 
+                style="@style/usertext"
+                android:id="@+id/car_manage_no1"
+                android:text="京A11111"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>  
+        
+    </LinearLayout>
+    
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/car_manage_layout2"
+            android:clickable="true"
+            style="@style/single_layout">
+            <TextView 
+                style="@style/usertext"
+                android:id="@+id/car_manage_no2"
+                android:text="沪B22222"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>  
+        
+    </LinearLayout>
+
+    
+
+        
+    </LinearLayout>
+
+</ScrollView>

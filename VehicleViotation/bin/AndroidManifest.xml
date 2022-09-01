@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vehicleviotation"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BasePageTitleFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".HomePageFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".AddPageFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".FoundPageFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MinePageFragment"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ResetpwdActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".CarManageActivity"
+            android:label="@string/title_activity_car_manage" >
+        </activity>
+    </application>
+
+</manifest><!--
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <application>
+        <activity android:name="com.example.vehicleviotation.MineActivity"
+            android:label="@string/app_name"
+            >
+        </activity>
+    </application>
+
+</manifest>
+  >>>>>>> Added
+-->
+

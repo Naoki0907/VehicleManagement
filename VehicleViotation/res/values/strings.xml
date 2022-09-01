@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+    <string name="app_name">车辆违章处理</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_base_page_title_fragment">BasePageTitleFragment</string>
+    <string name="title_activity_home_page_fragment">HomePageFragment</string>
+    <string name="title_activity_add_page_fragment">AddPageFragment</string>
+    <string name="title_activity_found_page_fragment">FoundPageFragment</string>
+    <string name="title_activity_setting_page_fragment">SettingPageFragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_resetpwd">ResetpwdActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_mine">MineActivity</string>
+    <string name="banner_title">图片标题</string>
+    <string name="title_homepage_add_car_btn">点击添加车辆</string>
+    <string name="title_homepage_mycar">我的车辆</string>
+    <string name="title_homepage_hotissue">违章热点</string>
+    <string name="title_homepage_price">实时油价</string>
+    <string name="title_homepage_myshop">车辆商城</string>
+    <string name="title_activity_car_manage">CarManageActivity</string>
+
+</resources>

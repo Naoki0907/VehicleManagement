@@ -1,0 +1,178 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    
+    <FrameLayout
+        android:id="@+id/fl_banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dip" 
+        android:layout_marginTop="5dp">
+        
+        <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+ 
+        <LinearLayout
+            android:id="@+id/title_vp"
+            android:layout_width="match_parent"
+            android:layout_height="30dip"
+            android:layout_gravity="bottom"
+            android:background="#33000000"
+            android:gravity="center"
+            android:orientation="vertical" >
+ 
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/banner_title"
+                android:textColor="@android:color/white" />
+ 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:orientation="horizontal" >
+ 
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip" 
+                    android:background="@drawable/dot_focused"/>
+ 
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="5dip"
+                    android:layout_height="5dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip" 
+                    android:background="@drawable/dot_normal"/>
+          
+                
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <Button
+        android:id="@+id/main_add_car_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="280dp"
+        android:background="#d81e06"
+        android:onClick="addcar"
+        android:text="@string/title_homepage_add_car_btn"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/home_bigModule"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fl_banner"
+        android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:id="@+id/imgCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/homepage_icon_car"
+                android:onClick="mycar_manage"/>
+            <TextView
+                android:id="@+id/myCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/title_homepage_mycar"
+                android:textSize="17sp"/>
+            
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:id="@+id/imgIssue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/homepage_icon_issue"/>
+            <TextView
+                android:id="@+id/hotissue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/title_homepage_hotissue"
+                android:textSize="17sp"/>
+            
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:id="@+id/imgprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/homepage_icon_price"/>
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/title_homepage_price"
+                android:textSize="17sp"/>
+            
+            </LinearLayout>
+            
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+            <ImageView
+                android:id="@+id/imgShop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/homepage_icon_shop"/>
+            <TextView
+                android:id="@+id/myshop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/title_homepage_myshop"
+                android:textSize="17sp"/>
+            
+            </LinearLayout>
+        
+
+    </LinearLayout>
+
+</RelativeLayout>

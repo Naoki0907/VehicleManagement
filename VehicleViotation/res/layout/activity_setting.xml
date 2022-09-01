@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F3F6" >
+    
+    
+    <LinearLayout style="@style/wrap_layout">
+        <!-- 上圆角-->
+        <LinearLayout 
+            android:clickable="true"
+            android:id="@+id/feedback_layout"
+            style="@style/top_layout">
+            <TextView 
+                style="@style/usertext" 
+                android:id="@+id/feedback"
+                android:text="帮助与反馈" />
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+        
+      <!-- 分割线 -->
+          <View style="@style/bg_line"/>
+          <!-- 无圆角-->
+       <LinearLayout 
+           android:id="@+id/function_layout"
+           android:clickable="true"
+           style="@style/mid_layout">
+            <TextView 
+                style="@style/usertext"
+                android:id="@+id/function"
+                android:text="功能介绍" 
+                android:clickable="true"/>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             <View style="@style/bg_line"/>
+          <!-- 下圆角-->
+       <LinearLayout 
+           style="@style/bottom_layout"
+           android:id="@+id/about_layout"
+           android:clickable="true">"
+            <TextView 
+                style="@style/usertext"
+                android:id="@+id/about"
+                 android:text="关于" 
+                 android:clickable="true"/>
+          	<ImageView style="@style/img_arrow"/>
+        </LinearLayout>
+             
+    </LinearLayout>
+
+    
+     <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout">
+        <LinearLayout
+            android:id="@+id/version_layout"
+            android:clickable="true"
+            style="@style/single_layout">
+            <TextView 
+                style="@style/usertext"
+                android:id="@+id/version"
+                android:text="当前版本1.0.0"/>
+            <ImageView style="@style/img_arrow"/>
+        </LinearLayout>  
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

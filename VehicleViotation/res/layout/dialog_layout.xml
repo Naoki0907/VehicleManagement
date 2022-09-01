@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:text="描述"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp" />
+    
+     <TextView
+          android:layout_marginTop="16dp"
+        android:text="选择支付方式："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/rtbn_pay1"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信支付" />
+        
+         <RadioButton
+            android:id="@+id/rtbn_pay2"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝支付" />
+         
+          <RadioButton
+            android:id="@+id/rtbn_pay3"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银联在线支付" />
+    </RadioGroup>
+
+</LinearLayout>
