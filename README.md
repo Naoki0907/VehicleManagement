@@ -12,10 +12,13 @@
 #### 主界面
 * 点击下方图标来切换首页、查询页面、处理页面以及用户页面
 * 登录后点击我的车辆查看绑定车辆信息
-* 点击添加车辆绑定新的车辆
+* 点击添加车辆绑定新的车辆  
+![image](https://github.com/Naoki0907/VehicleManagement/blob/main/VehicleViotation/img/main.png)
 #### 查询界面
-* 输入正确的车牌号、发动机号和车架号码
+* 输入正确的车牌号、发动机号和车架号码  
+![image](https://github.com/Naoki0907/VehicleManagement/blob/main/VehicleViotation/img/search.png)
 #### 处理界面
 * 违章信息包括违章地点、扣分、罚款以及办结情况
 * 界面上方为该车辆违章信息的统计情况
-* 点击未办结的条目可以进行缴费
+* 点击未办结的条目可以进行缴费  
+![image](https://github.com/Naoki0907/VehicleManagement/blob/main/VehicleViotation/img/pay.png)
